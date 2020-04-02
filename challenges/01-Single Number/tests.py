@@ -4,46 +4,48 @@ from challenge import Solution
 
 class TestSingleNumber(unittest.TestCase):
 
+    def setUp(self):
+        self.sut = Solution()
+
     def test_a(self):
-        solution = Solution()
         input = [2, 2, 1]
-        expectedOutput = 1
+        expected_output = 1
 
-        actualOutput = solution.singleNumberUsingExtraMemory(input)
-        assert actualOutput == expectedOutput
+        actual_output = self.sut.singleNumberUsingExtraMemory(input)
+        self.assertEqual(actual_output, expected_output)
 
-        actualOutput = solution.singleNumberNotUsingExtraMemory(input)
-        self.assertEqual(actualOutput, expectedOutput)
+        actual_output = self.sut.singleNumberNotUsingExtraMemory(input)
+        self.assertEqual(actual_output, expected_output)
 
     def test_b(self):
-        solution = Solution()
         input = [4,1,2,1,2]
-        expectedOutput = 4
-        actualOutput = solution.singleNumberUsingExtraMemory(input)
-        assert actualOutput == expectedOutput
+        expected_output = 4
 
-        actualOutput = solution.singleNumberNotUsingExtraMemory(input)
-        self.assertEqual(actualOutput, expectedOutput)
+        actual_output = self.sut.singleNumberUsingExtraMemory(input)
+        self.assertEqual(actual_output, expected_output)
+
+        actual_output = self.sut.singleNumberNotUsingExtraMemory(input)
+        self.assertEqual(actual_output, expected_output)
 
     def test_c(self):
-        solution = Solution()
         input = [2,1,3,1,3]
-        expectedOutput = 2
-        actualOutput = solution.singleNumberUsingExtraMemory(input)
-        assert actualOutput == expectedOutput
+        expected_output = 2
 
-        actualOutput = solution.singleNumberNotUsingExtraMemory(input)
-        self.assertEqual(actualOutput, expectedOutput)
+        actual_output = self.sut.singleNumberUsingExtraMemory(input)
+        self.assertEqual(actual_output, expected_output)
+
+        actual_output = self.sut.singleNumberNotUsingExtraMemory(input)
+        self.assertEqual(actual_output, expected_output)
 
     def test_d(self):
-        solution = Solution()
         input = [5]
-        expectedOutput = 5
-        actualOutput = solution.singleNumberUsingExtraMemory(input)
-        assert actualOutput == expectedOutput
+        expected_output = 5
 
-        actualOutput = solution.singleNumberNotUsingExtraMemory(input)
-        self.assertEqual(actualOutput, expectedOutput)
+        actual_output = self.sut.singleNumberUsingExtraMemory(input)
+        self.assertEqual(actual_output, expected_output)
+
+        actual_output = self.sut.singleNumberNotUsingExtraMemory(input)
+        self.assertEqual(actual_output, expected_output)
 
 if __name__ == '__main__':
     unittest.main()
