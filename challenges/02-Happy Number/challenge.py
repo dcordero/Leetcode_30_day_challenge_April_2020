@@ -1,8 +1,8 @@
 '''
- [Day 2: 02/04/2020](https://leetcode.com/explore/other/card/30-day-leetcoding-challenge/528/week-1/3284/)
+[Day 2: 02/04/2020](https://leetcode.com/explore/other/card/30-day-leetcoding-challenge/528/week-1/3284/)
  
  
- # Happy Number
+# Happy Number
  
  Write an algorithm to determine if a number is "happy".
 
