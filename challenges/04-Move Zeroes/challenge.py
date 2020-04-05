@@ -1,4 +1,3 @@
-
 '''
 [Day 4: 04/04/2020](https://leetcode.com/explore/other/card/30-day-leetcoding-challenge/528/week-1/3286/)
  
